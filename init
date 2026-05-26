@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+CLI_DIR="$(dirname "$(realpath "$0")")"
+CLI_SHELX_DIR="$CLI_DIR/shelx"
+CLI_TARGET="$CLI_DIR/shelx"
+
+cat "$CLI_SHELX_DIR/setup" "$CLI_SHELX_DIR/config" "$CLI_SHELX_DIR/ui_notifications" "$CLI_SHELX_DIR/ui_laucher_fzf" "$CLI_SHELX_DIR/ui_laucher_rofi" "$CLI_SHELX_DIR/ui_laucher" >"$CLI_TARGET"
+chmod +x "$CLI_TARGET"
